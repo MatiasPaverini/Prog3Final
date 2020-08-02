@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "4593033d-cc1b-4f25-a62a-291978d5b74f",
+		"name": "Final",
+		"description": "Requests para final de programación 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Traer todos los eventos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU5ODQ4MzMsImV4cCI6MTU5NTk5MjAzMywiYXVkIjoiOTM5MDljOWMzZGFhYWY3YjdkOTU2YjFiZjcxNDEwNWIxYWE5YzliNiIsImRhdGEiOnsiaWQiOjIsInVzZXIiOiJ1c2VyMSIsImVtYWlsIjoidXNlcjFAZXhhbWxlLmNvbSIsInR5cGUiOjEsInBhc3MiOiIkMnkkMTAkQVBQQngwXC8yak5NTmFBcmtLaVpvMi5aVGxhVFBHeDRCZFVrdENkLkZsSDhFNkg0TFhkbDNPIn0sImFwcCI6IkFQSSBSRVNUIE1hdGlhcyBQYXZlcmluaSJ9.BEimFqOAYl6dhPJRtOnIRurp9be-6_yxHG4WaBpjKhM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/final/public/events",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"final",
+						"public",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar eventos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU5Nzk3MDMsImV4cCI6MTU5NTk4NjkwMywiYXVkIjoiOTM5MDljOWMzZGFhYWY3YjdkOTU2YjFiZjcxNDEwNWIxYWE5YzliNiIsImRhdGEiOnsiaWQiOjIsInVzZXIiOiJ1c2VyMSIsImVtYWlsIjoidXNlcjFAZXhhbWxlLmNvbSIsInR5cGUiOjEsInBhc3MiOiIkMnkkMTAkQVBQQngwXC8yak5NTmFBcmtLaVpvMi5aVGxhVFBHeDRCZFVrdENkLkZsSDhFNkg0TFhkbDNPIn0sImFwcCI6IkFQSSBSRVNUIE1hdGlhcyBQYXZlcmluaSJ9.rTQKOYUxgBzwaWOu1KqO7zySu-A4zlJwkY1Jpl0zOSU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/final/public/events/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"final",
+						"public",
+						"events",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear evento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU5Nzk3MDMsImV4cCI6MTU5NTk4NjkwMywiYXVkIjoiOTM5MDljOWMzZGFhYWY3YjdkOTU2YjFiZjcxNDEwNWIxYWE5YzliNiIsImRhdGEiOnsiaWQiOjIsInVzZXIiOiJ1c2VyMSIsImVtYWlsIjoidXNlcjFAZXhhbWxlLmNvbSIsInR5cGUiOjEsInBhc3MiOiIkMnkkMTAkQVBQQngwXC8yak5NTmFBcmtLaVpvMi5aVGxhVFBHeDRCZFVrdENkLkZsSDhFNkg0TFhkbDNPIn0sImFwcCI6IkFQSSBSRVNUIE1hdGlhcyBQYXZlcmluaSJ9.rTQKOYUxgBzwaWOu1KqO7zySu-A4zlJwkY1Jpl0zOSU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"desc\": \"Esto es un evento\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/final/public/events",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"final",
+						"public",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU5NDk4NDQsImV4cCI6MTU5NTk1NzA0NCwiYXVkIjoiOTM5MDljOWMzZGFhYWY3YjdkOTU2YjFiZjcxNDEwNWIxYWE5YzliNiIsImRhdGEiOnsiaWQiOjI2LCJ1c3VhcmlvIjoiYWRtaW40IiwiZW1haWwiOiJhZG1pbjRAZXhhbXBsZS5jb20iLCJ0aXBvIjowLCJjbGF2ZSI6IiQyeSQxMCRRbTU5aDVQN2phRlFcL2VIU292QXlqdVwvRlhRaE50cTdtZzF5enhEVmV4T0Fma2xhanlvVjMyIn0sImFwcCI6IkFQSSBSRVNUIE1hdGlhcyBQYXZlcmluaSJ9.jmDRkbw1Ew0G-uZSzm6qiXMJoyH9qJmrE7Ia__fqJME",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": \"user1\",\n    \"pass\": \"user1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/final/public/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"final",
+						"public",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU5NjU2MDUsImV4cCI6MTU5NTk3MjgwNSwiYXVkIjoiOTM5MDljOWMzZGFhYWY3YjdkOTU2YjFiZjcxNDEwNWIxYWE5YzliNiIsImRhdGEiOnsiaWQiOjEzLCJ1c3VhcmlvIjoiYWRtaW4xIiwiZW1haWwiOiJleGFtcGxlQGV4YW1wbGUuY29tIiwidGlwbyI6MSwiY2xhdmUiOiIkMnkkMTAkdkxHWVB6WklxYnVkQ0xod3M2djRkLmlsUDIwSE1PVTdmZmRWbTVtWENmWVF3N3E5UWNzcXEifSwiYXBwIjoiQVBJIFJFU1QgTWF0aWFzIFBhdmVyaW5pIn0.50Dimv__DBsEo64TrLuHek5TN9_iud_wsH-TAVLwluE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"user\",\n    \"user\": \"user1\",\n    \"pass\": \"user1234\",\n    \"email\": \"user1@examle.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/final/public/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"final",
+						"public",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
